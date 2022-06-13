@@ -57,15 +57,17 @@ app.get('/bookings', (req, res) => {
         })
       }
       else {
-        res.status(401).send(documents)
+        res.status(401).send('Un-authorised Acces')
       }
     })
     .catch((error) => {
-      res.send('unauthorised')
+      res.status(401).send('Un-authorised Access')
     });
 
   }
-   
+   else {
+    res.status(401).send('Un-authorised Access')
+   }
 })
 
 });
