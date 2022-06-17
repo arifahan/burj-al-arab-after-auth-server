@@ -74,7 +74,7 @@ app.get('/bookings', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send("Md. Ariful Islam");
+  res.send("H! Mr. Md. Ariful Islam your heroku is working now");
 })
 
 
